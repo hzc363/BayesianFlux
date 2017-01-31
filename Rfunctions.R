@@ -203,7 +203,7 @@ fluxPlot = function(results,Y,time,plot=T){
   if(plot == F){return(Act_p)}
   par(mfrow=c(2,2))
   plot(time,Y,ylim=c(min(Y)*0.8,max(Y)*1.2),main="Data",xlab="Time",ylab="Ca2+")
-  plot(time,Y,,ylim=c(min(Y)*0.8,max(Y)*1.2),main="Fitted Data",xlab="Time",ylab="Ca2+")
+  plot(time,Y,ylim=c(min(Y)*0.8,max(Y)*1.2),main="Fitted Data",xlab="Time",ylab="Ca2+")
   points(seqEY,apply(results$pos_Y, 2,mean),col="black",pch=19)
   barplot(Act_p[as.character(time_c) ],ylim =c(0,1),names.arg=time_c,xlab='Time',ylab='Probability',main="Probability of Activation")
   ylim = c((min(results$pos_NAct)-1),(max(results$pos_NAct)+1))
