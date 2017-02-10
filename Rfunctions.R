@@ -82,7 +82,7 @@ Bflux = function(Y,time,
                  #Settings
                  iter = 800,BI=200,Sw = 0.1,
                  #hyper parameters
-                 Ea = 20, Sa = 1000,Eb = -20, Sb = 1000,
+                 Ea = 0, Sa = 1000,Eb = 0, Sb = 1000,
                  ac = 0.0001, bc = 0.0009,ld = 30,
                  aS = 0.0001, bS = 0.0009, 
                  #Initial values
